@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>📊 Stock Market Analysis</h1>
+    <p class="subtitle">Simple Dashboard for Understanding Market Trends</p>
+</header>
+
+<div class="container">
+    <div class="analysis-card">
+
+        <h2>Analyze Stock</h2>
+
+        <label>Select Company:</label>
+        <select id="companySelect">
+            <option value="reliance">Reliance</option>
+            <option value="tcs">TCS</option>
+            <option value="infosys">Infosys</option>
+        </select>
+
+        <button onclick="loadStock()">Analyze</button>
+
+        <div id="stockData"></div>
+
+        <canvas id="stockChart" height="100"></canvas>
+
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Stock Insight | All Rights Reserved</p>
+</footer>
+
+<script src="script.js" ></script>
+</body>
+</html>
